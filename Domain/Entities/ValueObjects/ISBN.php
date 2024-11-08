@@ -3,12 +3,10 @@
 
 namespace ValueObjects;
 
-class ISBN
-{
+class ISBN {
     private string $isbn;
 
-    public function __construct(string $isbn)
-    {
+    public function __construct(string $isbn){
         if(!$this->isValidISBN($isbn)){
             throw new \InvalidArgumentException("Invalid ISBN.");
         }
