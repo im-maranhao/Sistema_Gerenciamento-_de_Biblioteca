@@ -9,7 +9,7 @@ class Book {
     private string $title;
     private string $author;
     private ISBN $isbn;
-    private bool $isVailable;
+    private bool $isAvailable;
 
     public function __construct(string $title, string $author, ISBN $isbn){
         
@@ -18,5 +18,12 @@ class Book {
         $this->isbn  = $isbn;
         $this->isAvailable = true;
         
+    }
+
+    public function borrow(): bool{
+        if($this->isAvailable){
+            $this->isAvailable = false;
+            return true;
+        }
     }
 }
