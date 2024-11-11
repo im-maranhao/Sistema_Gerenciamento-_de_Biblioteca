@@ -33,4 +33,8 @@ class Book {
         $this->isAvailable = true;
     }
 
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
 }
