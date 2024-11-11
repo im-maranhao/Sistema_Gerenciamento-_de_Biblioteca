@@ -26,4 +26,11 @@ class Book {
             return true;
         }
     }
+
+    
+    public function returnBook(): void
+    {
+        $this->isAvailable = true;
+    }
+
 }
