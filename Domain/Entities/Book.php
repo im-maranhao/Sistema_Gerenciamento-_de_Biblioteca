@@ -43,3 +43,5 @@ class Book {
         return $this->isAvailable;
     }
 }
+
+?>

@@ -23,3 +23,5 @@ class ISBN {
         return $this->isbn;
     }
 }
+
+?>
