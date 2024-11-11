@@ -37,4 +37,9 @@ class Book {
     {
         return $this->title;
     }
+    
+    public function isAvailable(): bool
+    {
+        return $this->isAvailable;
+    }
 }
