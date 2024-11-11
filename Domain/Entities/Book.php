@@ -27,7 +27,6 @@ class Book {
         }
     }
 
-    
     public function returnBook(): void
     {
         $this->isAvailable = true;
